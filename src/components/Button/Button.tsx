@@ -17,7 +17,7 @@ const setLargeWidth = (label:string) => {
     }
 } 
 
-const setMidiumWidth = (label:string) => {
+const setMediumWidth = (label:string) => {
     if (label === "TextOnly"){
         return "112"
     } else if  (label === "IconRight"){
@@ -56,7 +56,7 @@ const setSize = (props: IButton) => {
             letter-spacing: 0em;
         `
     } else if (size === "Midium"){
-        const widthValue = setMidiumWidth(label)
+        const widthValue = setMediumWidth(label)
         return css`
         height: 56px;
         width: ${widthValue}px;
